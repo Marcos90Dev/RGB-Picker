@@ -1,0 +1,57 @@
+* {
+    font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#colorButton {
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: rgba(0, 0, 0, .1);
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 1);
+}
+
+#colorButton:hover {
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, .1);
+}
+
+#rgbText {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 1rem 0px;
+}
+
+.counter {
+    position: relative;
+    padding-top: 25px;
+
+}
+
+@media screen and (min-width: 425px) {
+    #colorButton {
+        font-size: 2rem;
+    }
+
+    #rgbText {
+        font-size: 3rem;
+
+    }
+
+    .counter {
+        position: fixed;
+        bottom: 0;
+        padding: 15px;
+    }
+
+}
